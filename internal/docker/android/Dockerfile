@@ -28,7 +28,7 @@ RUN find $HOME/openssl-1.1.1a-* -type f -exec llvm-strip --strip-all {} \;
 
 
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER

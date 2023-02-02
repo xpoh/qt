@@ -17,15 +17,15 @@ func Update() {
 	utils.RunCmd(exec.Command("go", "clean", "-i", "github.com/bluszcz/cutego/internal/..."), "run \"go clean internal\"")
 
 	fetch := exec.Command("git", "fetch", "-f", "--all")
-	fetch.Dir = filepath.Join(utils.MustGoPath(), "src", "github.com", "therecipe", "qt")
+	fetch.Dir = filepath.Join(utils.MustGoPath(), "src", "github.com", "bluszcz", "qt")
 	utils.RunCmd(fetch, "run \"git fetch\"")
 
 	checkoutCmd := exec.Command("git", "checkout", "-f", "--", utils.GoQtPkgPath("cmd"))
-	checkoutCmd.Dir = filepath.Join(utils.MustGoPath(), "src", "github.com", "therecipe", "qt")
+	checkoutCmd.Dir = filepath.Join(utils.MustGoPath(), "src", "github.com", "bluszcz", "qt")
 	utils.RunCmd(checkoutCmd, "run \"git checkout cmd\"")
 
 	checkoutInternal := exec.Command("git", "checkout", "-f", "--", utils.GoQtPkgPath("internal"))
-	checkoutInternal.Dir = filepath.Join(utils.MustGoPath(), "src", "github.com", "therecipe", "qt")
+	checkoutInternal.Dir = filepath.Join(utils.MustGoPath(), "src", "github.com", "bluszcz", "qt")
 	utils.RunCmd(checkoutInternal, "run \"git checkout internal\"")
 
 	hash := "please install git"

@@ -183,7 +183,7 @@ func InitEnv(target string, docker bool, path string) {
 	}
 
 	if !utils.ExistsDir(utils.QT_DIR()) {
-		qt_dir := strings.TrimSpace(utils.RunCmd(utils.GoList("{{.Dir}}", "github.com/therecipe/env_"+runtime.GOOS+"_amd64_"+strconv.Itoa(utils.QT_VERSION_NUM())[:3], "-find"), "get env dir"))
+		qt_dir := strings.TrimSpace(utils.RunCmd(utils.GoList("{{.Dir}}", "github.com/bluszcz/env_"+runtime.GOOS+"_amd64_"+strconv.Itoa(utils.QT_VERSION_NUM())[:3], "-find"), "get env dir"))
 
 		switch runtime.GOOS {
 		case "linux", "darwin", "windows":
@@ -209,7 +209,7 @@ func InitEnv(target string, docker bool, path string) {
 			if err == nil {
 				link = filepath.Join("C:\\", "Users", "Public", "env_windows_amd64_Tools")
 				utils.RemoveAll(link)
-				_, err = utils.RunCmdOptionalError(exec.Command("cmd", "/C", "mklink", "/J", link, strings.TrimSpace(utils.RunCmd(utils.GoList("{{.Dir}}", "github.com/therecipe/env_"+runtime.GOOS+"_amd64_"+strconv.Itoa(utils.QT_VERSION_NUM())[:3]+"/Tools", "-find"), "get env dir"))), "create symlink for env")
+				_, err = utils.RunCmdOptionalError(exec.Command("cmd", "/C", "mklink", "/J", link, strings.TrimSpace(utils.RunCmd(utils.GoList("{{.Dir}}", "github.com/bluszcz/env_"+runtime.GOOS+"_amd64_"+strconv.Itoa(utils.QT_VERSION_NUM())[:3]+"/Tools", "-find"), "get env dir"))), "create symlink for env")
 			}
 		}
 		if err != nil && target == runtime.GOOS {

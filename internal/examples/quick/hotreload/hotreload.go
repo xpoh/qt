@@ -30,7 +30,7 @@ func initQQuickView(path string) *quick.QQuickView {
 
 func main() {
 
-	var path = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "therecipe", "qt", "internal", "examples", "quick", "hotreload", "qml", "hotreload.qml")
+	var path = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "bluszcz", "qt", "internal", "examples", "quick", "hotreload", "qml", "hotreload.qml")
 
 	widgets.NewQApplication(len(os.Args), os.Args)
 

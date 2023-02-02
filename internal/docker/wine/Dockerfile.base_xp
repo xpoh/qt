@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER

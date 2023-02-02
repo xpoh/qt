@@ -28,7 +28,7 @@ import (
 )
 
 var (
-	pathToProject      = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "therecipe", "qt", "internal", "examples", "showcases", "wallet")
+	pathToProject      = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "bluszcz", "qt", "internal", "examples", "showcases", "wallet")
 	pathToWalletDaemon = filepath.Join(os.Getenv("GOPATH"), "bin", "wallet", "WalletDaemon")
 
 	PRODUCTION = true //set to 'true' to use qrc: instead of qml files

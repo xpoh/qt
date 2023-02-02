@@ -4,7 +4,7 @@ RUN echo "deb http://pkg.mxe.cc/repos/apt trusty main" | tee --append /etc/apt/s
 
 
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER

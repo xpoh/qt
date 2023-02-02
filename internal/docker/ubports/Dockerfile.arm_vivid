@@ -1,5 +1,5 @@
 FROM clickable/ubuntu-sdk:15.04-armhf
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER

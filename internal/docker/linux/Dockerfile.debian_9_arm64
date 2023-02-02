@@ -8,7 +8,7 @@ RUN [ "cross-build-start" ]
 RUN /usr/local/go/bin/go get -tags=no_env github.com/StarAurryon/qt/cmd/...
 
 FROM balenalib/generic-aarch64-debian:stretch
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER

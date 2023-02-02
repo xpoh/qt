@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER
@@ -20,7 +20,7 @@ COPY --from=bluszcz/cutego:linux $GOPATH/src/github.com/StarAurryon/qt $GOPATH/s
 
 RUN apt-get -qq update && apt-get --no-install-recommends -qq -y install ca-certificates curl git make && apt-get -qq clean
 
-RUN SYSROOT=qtrpi-sysroot-minimal-latest.tar.gz && curl -sL --retry 10 --retry-delay 60 -O https://github.com/therecipe/files/releases/download/v0.0.0/$SYSROOT && tar -xzf $SYSROOT -C / && rm -f $SYSROOT
+RUN SYSROOT=qtrpi-sysroot-minimal-latest.tar.gz && curl -sL --retry 10 --retry-delay 60 -O https://github.com/bluszcz/files/releases/download/v0.0.0/$SYSROOT && tar -xzf $SYSROOT -C / && rm -f $SYSROOT
 RUN ln -s /opt/qtrpi/raspbian/sysroot-minimal /opt/qtrpi/raspbian/sysroot
 
 RUN git clone -q --depth 1 https://github.com/raspberrypi/tools.git /opt/qtrpi/raspi/tools

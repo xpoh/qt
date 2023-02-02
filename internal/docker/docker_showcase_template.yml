@@ -27,4 +27,4 @@ jobs:
       -
         script: 'go get -v -tags=no_env github.com/StarAurryon/qt/cmd/... && $(go env GOPATH)/bin/qtsetup prep'
       -
-        script: 'go get -v -d github.com/therecipe/${{ parameters.tag }} && cd $(go env GOPATH)/src/github.com/therecipe/${{ parameters.tag }} && ./deploy.sh && GITHUB_SECRET=$(GITHUB_SECRET) ./push.sh'
+        script: 'go get -v -d github.com/bluszcz/${{ parameters.tag }} && cd $(go env GOPATH)/src/github.com/bluszcz/${{ parameters.tag }} && ./deploy.sh && GITHUB_SECRET=$(GITHUB_SECRET) ./push.sh'

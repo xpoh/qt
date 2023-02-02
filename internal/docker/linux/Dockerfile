@@ -19,7 +19,7 @@ RUN find /opt/Qt5.13.0/5.13.0/gcc_64 -type f ! -name "*.a" ! -name "*.la" ! -nam
 
 
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER

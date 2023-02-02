@@ -18,7 +18,7 @@ Impressions
 
 [Gallery](https://github.com/bluszcz/cutego/wiki/Gallery) of example applications.
 
-[JavaScript Demo](https://therecipe.github.io/entry) | *[source](https://github.com/therecipe/entry)*
+[JavaScript Demo](https://therecipe.github.io/entry) | *[source](https://therecipe.com/bluszcz/entry)*
 
 Installation
 ------------

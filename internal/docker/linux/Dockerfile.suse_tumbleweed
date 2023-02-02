@@ -7,7 +7,7 @@ RUN GO=go1.13.4.linux-amd64.tar.gz && curl -sL --retry 10 --retry-delay 60 -O ht
 RUN /usr/local/go/bin/go get -tags=no_env github.com/StarAurryon/qt/cmd/...
 
 FROM opensuse/tumbleweed:latest
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV GOPATH $HOME/work
 ENV PATH /usr/local/go/bin:$PATH

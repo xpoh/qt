@@ -26,7 +26,7 @@ RUN cd /fcitx-qt5/platforminputcontext && cmake . &&  make -j $(grep -c ^process
 
 
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER

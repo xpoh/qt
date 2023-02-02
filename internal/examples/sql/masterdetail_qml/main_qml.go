@@ -1,3 +1,4 @@
+//go:build qml
 // +build qml
 
 package main
@@ -28,7 +29,7 @@ func main() {
 	if PRODUCTION {
 		path = "qrc:/qml/view.qml"
 	} else {
-		path = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "therecipe", "qt", "internal", "examples", "sql", "masterdetail_qml", "view", "qml", "view.qml")
+		path = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "bluszcz", "qt", "internal", "examples", "sql", "masterdetail_qml", "view", "qml", "view.qml")
 	}
 
 	core.QCoreApplication_SetAttribute(core.Qt__AA_EnableHighDpiScaling, true)

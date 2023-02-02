@@ -10,7 +10,7 @@ RUN /usr/local/go/bin/go get -tags=no_env github.com/StarAurryon/qt/cmd/...
 
 
 FROM i386/ubuntu:14.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 ENV USER user
 ENV HOME /home/$USER
