@@ -16,6 +16,8 @@ import (
 )
 
 func main() {
+	fmt.Println("qtdeploy with custom build image akaddr/qt:windows_64_static")
+
 	var non_recursive bool
 	if os.Args[len(os.Args)-1] == "non_recursive" {
 		non_recursive = true
