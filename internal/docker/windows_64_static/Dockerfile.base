@@ -8,6 +8,6 @@ RUN cd /usr/lib/mxe && make -j $(grep -c ^processor /proc/cpuinfo) MXE_TARGETS='
 
 
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer bluszcz
 
 COPY --from=base /usr/lib/mxe /usr/lib/mxe

@@ -44,7 +44,7 @@ set GOPATH=C:\gopath
 setx /M GOROOT "C:\go"
 set GOROOT=C:\go
 
-go get -v -tags=no_env github.com/therecipe/qt/cmd/...
+go get -v -tags=no_env github.com/StarAurryon/qt/cmd/...
 
 
 ::install VC++ 2015 Redis
@@ -108,7 +108,7 @@ if "%QT_MSYS2%" == "true" (
   ::install Qt
   set QT=qt-unified-windows-x86-online.exe
   curl -sL --retry 10 --retry-delay 10 -o %TMP%\!QT! https://download.qt.io/official_releases/online_installers/!QT!
-  %TMP%\!QT! -v --script %GOPATH%\src\github.com\therecipe\qt\internal\ci\iscript.qs WINDOWS=true
+  %TMP%\!QT! -v --script %GOPATH%\src\github.com\bluszcz\qt\internal\ci\iscript.qs WINDOWS=true
   del %TMP%\!QT! /Q
   setx /M PATH "%PATH%;C:\Qt\Tools\mingw730_64\bin"
   set PATH=%PATH%;C:\Qt\Tools\mingw730_64\bin

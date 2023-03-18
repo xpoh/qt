@@ -4,9 +4,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/quick"
-	"github.com/therecipe/qt/widgets"
+	"github.com/bluszcz/cutego/core"
+	"github.com/bluszcz/cutego/quick"
+	"github.com/bluszcz/cutego/widgets"
 )
 
 func initQQuickView(path string) *quick.QQuickView {
@@ -30,7 +30,7 @@ func initQQuickView(path string) *quick.QQuickView {
 
 func main() {
 
-	var path = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "therecipe", "qt", "internal", "examples", "quick", "hotreload", "qml", "hotreload.qml")
+	var path = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "bluszcz", "qt", "internal", "examples", "quick", "hotreload", "qml", "hotreload.qml")
 
 	widgets.NewQApplication(len(os.Args), os.Args)
 

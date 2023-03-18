@@ -4,31 +4,31 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/quick"
-	"github.com/therecipe/qt/widgets"
+	"github.com/bluszcz/cutego/core"
+	"github.com/bluszcz/cutego/quick"
+	"github.com/bluszcz/cutego/widgets"
 
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/assets"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/assets"
 
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/dashboard"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/files"
-	fcontroller "github.com/therecipe/qt/internal/examples/showcases/wallet/files/controller"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/hosting"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/terminal"
-	tcontroller "github.com/therecipe/qt/internal/examples/showcases/wallet/terminal/controller"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/theme"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/view"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/view/left"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/view/top"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/wallet"
-	wcontroller "github.com/therecipe/qt/internal/examples/showcases/wallet/wallet/controller"
-	_ "github.com/therecipe/qt/internal/examples/showcases/wallet/wallet/dialog"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/dashboard"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/files"
+	fcontroller "github.com/bluszcz/cutego/internal/examples/showcases/wallet/files/controller"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/hosting"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/terminal"
+	tcontroller "github.com/bluszcz/cutego/internal/examples/showcases/wallet/terminal/controller"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/theme"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/view"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/view/left"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/view/top"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/wallet"
+	wcontroller "github.com/bluszcz/cutego/internal/examples/showcases/wallet/wallet/controller"
+	_ "github.com/bluszcz/cutego/internal/examples/showcases/wallet/wallet/dialog"
 
-	"github.com/therecipe/qt/internal/examples/showcases/wallet/controller"
+	"github.com/bluszcz/cutego/internal/examples/showcases/wallet/controller"
 )
 
 var (
-	pathToProject      = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "therecipe", "qt", "internal", "examples", "showcases", "wallet")
+	pathToProject      = filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "bluszcz", "qt", "internal", "examples", "showcases", "wallet")
 	pathToWalletDaemon = filepath.Join(os.Getenv("GOPATH"), "bin", "wallet", "WalletDaemon")
 
 	PRODUCTION = true //set to 'true' to use qrc: instead of qml files
