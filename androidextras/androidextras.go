@@ -1,3 +1,4 @@
+//go:build !android && !android_emulator
 // +build !android,!android_emulator
 
 package androidextras
@@ -115,8 +116,9 @@ func NewQAndroidBinderFromPointer(ptr unsafe.Pointer) (n *QAndroidBinder) {
 func (ptr *QAndroidBinder) DestroyQAndroidBinder() {
 }
 
+// QAndroidBinder::CallType
+//
 //go:generate stringer -type=QAndroidBinder__CallType
-//QAndroidBinder::CallType
 type QAndroidBinder__CallType int64
 
 const (
@@ -363,8 +365,9 @@ func NewQAndroidJniExceptionCleanerFromPointer(ptr unsafe.Pointer) (n *QAndroidJ
 	return
 }
 
+// QAndroidJniExceptionCleaner::OutputMode
+//
 //go:generate stringer -type=QAndroidJniExceptionCleaner__OutputMode
-//QAndroidJniExceptionCleaner::OutputMode
 type QAndroidJniExceptionCleaner__OutputMode int64
 
 const (
@@ -1412,8 +1415,9 @@ func NewQtAndroidFromPointer(ptr unsafe.Pointer) (n *QtAndroid) {
 func (ptr *QtAndroid) DestroyQtAndroid() {
 }
 
+// QtAndroid::BindFlag
+//
 //go:generate stringer -type=QtAndroid__BindFlag
-//QtAndroid::BindFlag
 type QtAndroid__BindFlag int64
 
 const (
@@ -1429,8 +1433,9 @@ const (
 	QtAndroid__ExternalService    QtAndroid__BindFlag = QtAndroid__BindFlag(-2147483648)
 )
 
+// QtAndroid::PermissionResult
+//
 //go:generate stringer -type=QtAndroid__PermissionResult
-//QtAndroid::PermissionResult
 type QtAndroid__PermissionResult int64
 
 const (
